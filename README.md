@@ -1,6 +1,6 @@
-# 🌟 Proyecto de Prueba Técnica para Zexel - Gestión de Pagos 💸
+# 🌟 Gestión de Pagos 💸
 
-Este proyecto es una prueba técnica personalizada para tu candidatura en Zexel, específicamente diseñada para el proyecto /tests/. Tu objetivo es crear una aplicación de gestión de pagos que demuestre tus habilidades en desarrollo frontend y backend.
+Tu objetivo es crear una aplicación de gestión de pagos que demuestre tus habilidades en desarrollo frontend y backend.
 
 ## 🌈 Temática de la Aplicación
 
