@@ -8,6 +8,14 @@ services:
       - ./api/mediafiles:/home/app/web/mediafiles
     ports:
       - 8000:8000
+    environment:
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgres_password
+      - POSTGRES_DB=data_payment_management
+      - POSTGRES_HOST=db
+    depends_on:
+      - db  
+
   front:
     build:
       context: ./front
@@ -21,5 +29,18 @@ services:
       - HOST=0.0.0.0
     depends_on:
       - api
+
+  db:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgres_password
+      - POSTGRES_DB=data_payment_management
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432" 
+
 volumes:
   postgres_data:
