@@ -100,14 +100,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'zexeltest.wsgi.application'
 
+import os
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('POSTGRES_DB', 'data_payment_management'),  
+        'USER': os.getenv('POSTGRES_USER', 'postgres_user'),   
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'postgres_password'), 
+        'HOST': os.getenv('POSTGRES_HOST', 'db'),
+        'PORT': '5432', 
     }
 }
 
