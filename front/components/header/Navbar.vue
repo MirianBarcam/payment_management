@@ -57,7 +57,7 @@
     display: flex;
     justify-content: center;
     max-width: 200px;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
   }
  
@@ -76,7 +76,7 @@
   }
 
   .text-link {
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(195, 192, 192);
     text-decoration: none;
   }
