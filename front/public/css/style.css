@@ -18,6 +18,7 @@
     --zexel-disabled: #c9c1ee;
     --zexel-success: #2dce89;
     --zexel-error: #f5365c;
+    --zexel-info: #034aa1;
     --zexel-subtle-text: #4c5c76;
     --zexel-pure-white: #ffffff;
     --zexel-blackhole: #000000;
@@ -29,6 +30,18 @@
     color: var(--zexel-subtle-text);
     font-family: "Nunito Sans";
 }
+
+.text-zexel-title {
+    font-size: 16px;
+}
+
+.text-zexel-subtitle {
+    font-size: 14px;
+}
+
+.text-zexel {
+    font-size: 12px;
+} 
 
 .app-description-container {
     background-color: var(--zexel-stroke-cards);

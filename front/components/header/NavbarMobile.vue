@@ -6,7 +6,8 @@
             Zexel Pay  
             </NuxtLink>
     
-            <div>
+            <div class="setting">
+                <HeaderSelectorLanguage/>
                 <HeaderHamburguerBtn @hamburguer-clicked="hamburguerclicked"/>
             </div>
    
@@ -19,10 +20,6 @@
                     {{ $t(option.name) }}
                 </NuxtLink>
             </div> 
-            <div class="selector-language">
-                <HeaderSelectorLanguage/>
-            </div>
-
         </div> 
 
     </nav>
@@ -55,7 +52,7 @@
         flex-direction: column;
         background-color: #333;
         padding: 0px 20px;
-        height: 130px;
+        height: 100px;
     }
 
     .content {
@@ -100,10 +97,9 @@
         color: white;
     }
 
-    .selector-language {
+    .setting {
         display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
+        flex-direction: row;
+        gap: 20px;
     }
 </style>

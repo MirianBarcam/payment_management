@@ -13,7 +13,7 @@
           </NuxtLink>
         </div> 
       </div>
-
+      
       <div class="navbar-container-settings">
         <HeaderSelectorLanguage></HeaderSelectorLanguage>
       </div>
@@ -50,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1300px;
+    width: 1290px;
   }
 
   .navbar-container-settings {
