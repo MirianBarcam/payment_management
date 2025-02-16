@@ -70,11 +70,6 @@
     border-color: var(--zexel-persian-blue);
 }
 
-.alert {
-    position: relative;
-    padding-right: 30px;
-}
-
 .close {
     position: absolute;
     top: 0;

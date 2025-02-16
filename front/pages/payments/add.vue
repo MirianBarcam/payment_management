@@ -3,7 +3,7 @@
 
     <h1 class="display-4 mt-2 mb-4">{{ $t('payments') }}</h1>
 
-    <div class="app-description-container text-center mb-5">
+    <!-- <div class="app-description-container text-center mb-5">
       <h2 class="mb-3">{{ $t('app_description') }}</h2>
       <div class="divider"></div>
     </div>
@@ -21,7 +21,7 @@
           <div class="h5">{{ $t('edit_payments') }}</div>
         </NuxtLink>
       </div>
-    </div>
+    </div> -->
 
     <div>
       <h2>{{ $t('add_payments') }}</h2>
@@ -71,8 +71,6 @@
         <button type="submit" class="btn btn-primary">{{ $t('submit') }}</button>
       </form>
     </div>
-
-    <Alert ref="alert" />
 
   </div>
 </template>

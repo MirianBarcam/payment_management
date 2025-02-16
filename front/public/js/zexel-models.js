@@ -1,22 +1,22 @@
-class BaseModel {
+export class BaseModel {
     constructor(data = {}) {
         this.id = data.id || null;
     }
 }
 
-class PaymentModel extends BaseModel {
+export class PaymentModel extends BaseModel {
     constructor(data = {}) {
         super(data);
+        this.concept = data.concept || '';
+        this.created = data.created ? this.formatDate(data.created) : null;
         this.source_amount = data.source_amount || 0;
         this.source_currency = data.source_currency || '';
         this.source_country = data.source_country || '';
         this.target_amount = data.target_amount || 0;
         this.target_currency = data.target_currency || '';
         this.target_country = data.target_country || '';
-        this.created = data.created ? this.formatDate(data.created) : null;
         this.updated = data.updated ? this.formatDate(data.updated) : null;
         this.status = data.status || 'Draft';
-        this.concept = data.concept || '';
         this.rate_exchange = data.rate_exchange || 0;
         this.sender_full_name = data.sender_full_name || '';
         this.receiver_full_name = data.receiver_full_name || '';
@@ -41,14 +41,14 @@ class PaymentModel extends BaseModel {
     ];
 }
 
-class CountryModel {
+export class CountryModel {
     constructor(data = {}) {
         this.name = data.name || '';
         this.iso3 = data.iso3 || '';
     }
 }
 
-class CurrencyModel {
+export class CurrencyModel {
     constructor(data = {}) {
         this.name = data.name || '';
         this.iso3 = data.iso3 || '';

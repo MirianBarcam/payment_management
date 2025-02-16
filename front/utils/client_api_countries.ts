@@ -1,3 +1,5 @@
+import { CountryModel } from "~/public/js/zexel-models" 
+
 export async function getCountries() {
     const response = await fetch('https://countriesnow.space/api/v0.1/countries/states', {
         headers: {
@@ -6,5 +8,5 @@ export async function getCountries() {
         }
     })
     const data = await response.json()
-    return data['data'].map(item => new CountryModel(item))
+    return data['data'].map((item:any) => new CountryModel(item))
 }

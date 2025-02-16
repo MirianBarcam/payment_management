@@ -12,10 +12,6 @@
 </template>
 
 <script setup>
-  import { useScreenSize } from '@/composables/useScreenSize'
-
   const { isMobile } = useScreenSize()
-
-  import { useAlert } from '@/composables/useAlert'
 </script>
  
